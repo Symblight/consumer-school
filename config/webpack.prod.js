@@ -11,6 +11,11 @@ module.exports = merge(common, {
   devtool: false,
   bail: true,
   plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'assets', context: resolve(__dirname, '..', 'public') },
+      ],
+    }),
     new CleanWebpackPlugin(),
     new ContextReplacementPlugin(/moment[/\\]locale$/, /ru|en-gb/),
     new BrotliPlugin({

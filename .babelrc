@@ -23,8 +23,8 @@
       "import",
       { "libraryName": "antd", "libraryDirectory": "es", "style": true },
       "antd"
-    ]
-    // "@loadable/babel-plugin"
+    ],
+    "@loadable/babel-plugin"
   ],
   "env": {
     "development": {

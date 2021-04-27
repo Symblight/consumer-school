@@ -134,12 +134,6 @@ module.exports = {
       favicon: resolve(__dirname, '..', 'public/favicon.png'),
     }),
     new InterpolateHtmlPlugin(HtmlWebpackPlugin, env.raw),
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: 'assets', context: resolve(__dirname, '..', 'public') },
-      ],
-    }),
-    new CleanWebpackPlugin(),
   ],
   optimization: {
     minimize: true,
