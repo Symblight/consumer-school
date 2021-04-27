@@ -1,0 +1,9 @@
+{
+    "simple-git-hooks": {
+        "pre-commit": "npx lint-staged",
+        "pre-push": "cd ../../ && npm run format",
+        "preserveUnused": [
+            "commit-msg"
+        ]
+    }
+}
